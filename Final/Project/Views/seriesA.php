@@ -1,7 +1,7 @@
 <?php
 require_once('../Model/ALLDB.php');
 
-$con = getConnection();
+$conn = getConnection();
 $message=$error="" ;
 //insert handle;
 
@@ -18,13 +18,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             }
             else
             {
-                $check=$con->query("SELECT * FROM series WHERE Title='$Title'");
+                $check=$conn->query("SELECT * FROM series WHERE Title='$Title'");
                 if($check->num_rows>0)
                 {
                     $error = "Series already exists";
                 }
                 else{
-                    $con->query("INSERT INTO series(Title,Genre,Seasons,Rating)VALUES('$Title','$Genre','$Seasons','$Rating')");
+                    $conn->query("INSERT INTO series(Title,Genre,Seasons,Rating)VALUES('$Title','$Genre','$Seasons','$Rating')");
                     $message = "Series inserted successfully";
                 }
             }
@@ -34,13 +34,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 if(isset($_GET['del']))
 {
     $delTitle = $_GET['del'];
-    $con->query("DELETE FROM series WHERE Title ='$delTitle'");
+    $conn->query("DELETE FROM series WHERE Title ='$delTitle'");
 
 }
 
 //fetch all series
 
-$serieslist = $con->query("SELECT * FROM series");
+$serieslist = $conn->query("SELECT * FROM series");
 
 
 ?>

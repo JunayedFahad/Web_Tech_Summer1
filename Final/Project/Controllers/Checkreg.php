@@ -1,6 +1,7 @@
 <?php
 
 require_once('../Model/ALLDB.php');
+$conn =getConnection();
 $message =$error="";
 
 //handle form submit
