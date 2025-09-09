@@ -62,6 +62,8 @@ $users=$conn->query("SELECT * FROM users");
 <html>
     <head>
      <title>   Registrated users </title>
+     <link rel ="stylesheet" href ="../css/style3.css">
+
 
      </head>
      <body>
