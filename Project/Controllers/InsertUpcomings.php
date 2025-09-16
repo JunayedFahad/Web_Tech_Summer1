@@ -12,7 +12,7 @@ if(empty($Title)||empty($Genre)||empty($RD))
     header('location:../Views/upcomingsA.php');
 }
 else{
-    insertUpcomings($Title,$Genre,$RD);
+    insertUpcomings($Title,$Genre,$RD,$Type,$Poster);
     header('location:../Views/upcomingsA.php');
 }
 

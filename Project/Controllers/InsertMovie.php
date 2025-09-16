@@ -12,7 +12,7 @@ if(empty($Title)||empty($Genre)||empty($Duration)||empty($Rating))
     header('location:../Views/seriesA.php');
 }
 else{
-    insertSeries($Title,$Genre,$Duration,$Rating);
+    insertMovie($Title,$Genre,$Duration,$Rating,$Poster);
     header('location:../Views/seriesA.php');
 }
 

@@ -58,6 +58,9 @@
                <br><br>
 
                    <input type ="submit" value ="Submit" name ="submit">
+                    <p>
+                         <a href="Welcome.php" ><button type="button" id="backBtn">Back</button></a>
+                      </p>
 
 
     </form>

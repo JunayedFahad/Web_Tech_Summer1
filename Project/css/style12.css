@@ -1,0 +1,90 @@
+/* General Page Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('movie-podium-background-with-movie-objects-3d-rendering_651547-1443.AVIF') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Centered Login Box */
+.login-box {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #5D4037; /* Marron color */
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+/* Headings */
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #FFD700; /* Highlight color for heading */
+}
+
+/* Labels */
+.login-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Inputs */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.update-btn,
+.back-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Update Button */
+.update-btn {
+    background-color: #45CE30; /* Green */
+    color: black;
+    width: 100%;
+}
+
+.update-btn:hover {
+    background-color: #34a226;
+}
+
+/* Back Button */
+.back-btn {
+    background-color: #FF4848; /* Red */
+    color: black;
+    margin-bottom: 20px;
+}
+
+.back-btn:hover {
+    background-color: #e53939;
+}
+
+/* Session Messages */
+.msg {
+    margin-top: 15px;
+    text-align: center;
+    color: #FFD700;
+    font-weight: bold;
+}

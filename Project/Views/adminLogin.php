@@ -80,6 +80,10 @@ else{
 
           <input type="submit" value="Log in">
 
+          <p>
+                         <a href="Welcome.php" ><button type="button" id="backBtn">Back</button></a>
+                      </p>
+
 
 
 

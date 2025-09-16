@@ -66,10 +66,10 @@ function UpdatePassword($username,$updatepassword)
       return $res ? true:false;
 }
 //insert movie
-function insertMovie($Title,$Genre,$Duration,$Rating)
+function insertMovie($Title,$Genre,$Duration,$Rating,$Poster)
 {
      $conn = getConnection();
-       $sql="INSERT INTO movies (Title,Genre,Duration,Rating) VALUES('$Title','$Genre','$Duration','$Rating')";
+       $sql="INSERT INTO movies (Title,Genre,Duration,Rating) VALUES('$Title','$Genre','$Duration','$Rating',$Poster)";
        $res = mysqli_query($conn,$sql);
       return $res ? true:false;
 }
@@ -78,18 +78,18 @@ function insertMovie($Title,$Genre,$Duration,$Rating)
 
 
 //insert series
-function insertSeries($Title,$Genre,$Seasons,$Rating)
+function insertSeries($Title,$Genre,$Seasons,$Rating,$Poster)
 {
      $conn = getConnection();
-       $sql="INSERT INTO series (Title,Genre,Seasons,Rating) VALUES('$Title','$Genre','$Seasons','$Rating')";
+       $sql="INSERT INTO series (Title,Genre,Seasons,Rating,Poster) VALUES('$Title','$Genre','$Seasons','$Rating','$Poster')";
        $res = mysqli_query($conn,$sql);
       return $res ? true:false;
 }
 
-function insertUpcomings($Title,$Genre,$RD)
+function insertUpcomings($Title,$Genre,$RD,$Type,$Poster)
 {
      $conn = getConnection();
-       $sql="INSERT INTO series (Title,Genre,RD) VALUES('$Title','$Genre','$RD')";
+       $sql="INSERT INTO series (Title,Genre,RD,Type) VALUES('$Title','$Genre','$RD',$Type,$Poster)";
        $res = mysqli_query($conn,$sql);
       return $res ? true:false;
 }

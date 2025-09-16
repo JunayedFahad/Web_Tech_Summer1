@@ -1,0 +1,113 @@
+/* General Page Style */
+body {
+    background: url('moviedownload.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title */
+#home {
+    font-size: 60px;
+    font-weight: bold;
+    color: #F5BCBA;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+/* Subtitle */
+h2 {
+    color: white;
+    margin-top: 10px;
+}
+
+/* Login Box */
+.login {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(255, 188, 186, 0.6);
+    text-align: left;
+}
+
+/* Labels and Inputs */
+.login label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Login Button */
+#loginBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #45CE30;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#loginBtn:hover {
+    background-color: #34a226;
+}
+
+/* Back Button */
+#backBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF4848;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+#backBtn:hover {
+    background-color: #e03e3e;
+}
+
+/* Forgot Password Link */
+.forgot-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #F5BCBA;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Error Message */
+.msg {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
