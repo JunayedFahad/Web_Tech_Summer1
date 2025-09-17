@@ -11,6 +11,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $Title=trim($_POST["Title"]);
     $Genre=trim($_POST["Genre"]);
     $RD=trim($_POST["RD"]);
+    $Type=trim($_POST["Type"]);
    // $Rating=trim($_POST["Rating"]);
 
 
@@ -124,7 +125,7 @@ $upcomingslist=$conn->query("SELECT * FROM  upcomings");
                     <input type="date" name ="RD" placeholder="Relase_Date">
                     <select name="Type" required>
                         <option value="">--Select Type--</option>
-                        <option vlaue="Movie">Movies</option>
+                        <option value="Movie">Movies</option>
                         <option value="Series">Series</option>
                     </select>
                     

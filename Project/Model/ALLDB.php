@@ -89,7 +89,7 @@ function insertSeries($Title,$Genre,$Seasons,$Rating,$Poster)
 function insertUpcomings($Title,$Genre,$RD,$Type,$Poster)
 {
      $conn = getConnection();
-       $sql="INSERT INTO series (Title,Genre,RD,Type) VALUES('$Title','$Genre','$RD',$Type,$Poster)";
+       $sql="INSERT INTO series (Title,Genre,RD,Type,Poster) VALUES('$Title','$Genre','$RD',$Type,$Poster)";
        $res = mysqli_query($conn,$sql);
       return $res ? true:false;
 }
