@@ -98,7 +98,7 @@ $movieslist=$conn->query("SELECT * FROM  movies");
 <html>
     <head>
         <title>Movies Management</title>
-        <link rel="stylesheet" href="../css/style8.css">
+        <link rel="stylesheet" href="../css/style14.css">
       
 </head>
 

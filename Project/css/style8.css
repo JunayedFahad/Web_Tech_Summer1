@@ -1,0 +1,80 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+/* Navigation Container */
+div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Links Styled as Buttons */
+div a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #4a90e2;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Hover Effect */
+div a:hover {
+  background: #357abd;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+/* Exit Button Different Color */
+div a:last-child {
+  background: #e74c3c;
+}
+
+div a:last-child:hover {
+  background: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  div a {
+    width: 100%;
+    text-align: center;
+  }
+}

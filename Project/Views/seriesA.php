@@ -98,7 +98,7 @@ $serieslist=$conn->query("SELECT * FROM  series");
 <html>
     <head>
         <title>Sereis Management</title>
-        <link rel="stylesheet" href="../css/style8.css">
+        <link rel="stylesheet" href="../css/style14.css">
       
 </head>
 
