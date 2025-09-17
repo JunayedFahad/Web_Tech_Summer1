@@ -20,10 +20,10 @@ function auth($name)
 }
 //forgot pass
 
-function authForgot($username)
+function authForgot($name)
 {
     $conn = getConnection();
-    $sql="SELECT * FROM users WHERE username = '$username'";
+    $sql="SELECT * FROM users WHERE name = '$name'";
     $res = mysqli_query($conn,$sql);
     return mysqli_num_rows($res)===1;
 
@@ -58,10 +58,10 @@ function authLoginAdmin($username,$password)
 }
 
 //update user password
-function UpdatePassword($username,$updatepassword)
+function UpdatePassword($name,$updatepassword)
 {
     $conn = getConnection();
-     $sql="UPDATE users SET password = '$updatepassword' WHERE username='$username'";
+     $sql="UPDATE users SET password = '$updatepassword' WHERE name='$name'";
       $res = mysqli_query($conn,$sql);
       return $res ? true:false;
 }

@@ -6,7 +6,7 @@ session_start();
 if(isset($_POST['update']))
 {
     $name=trim($_POST['name']);
-    $newPassword=trim($_POST["Password"]);
+    $newPassword=trim($_POST["password"]);
 
     if(empty($name) || empty($newPassword))
     {
@@ -18,7 +18,7 @@ if(isset($_POST['update']))
     if(authForgot($name))
     {
 
-        UpdatePassword($name,$newPassword);
+       if(UpdatePassword($name,$newPassword));
 
         $_SESSION['msg'] ="Password updated successfully";
 

@@ -11,9 +11,9 @@
             <form action="../Controllers/retrievePass.php" method="post">
            
              <label for="name">Enter you Name</label>
-             <input type="text" name="Name" id="name" required>
+             <input type="text" name="name" id="name" required>
              <label for="password">Enter new password</label>
-             <input type="password" name="Password" id="password" required>
+             <input type="password" name="password" id="password" required>
              <input type="submit" value="Update" name="update" class="update-btn">
 
 
